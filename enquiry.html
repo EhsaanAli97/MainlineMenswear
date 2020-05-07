@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt Enquiry</title>
+
+    <!-- ==================== jQuery File ==================== -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+
+    <!-- ==================== Font Awesome Style Sheet ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+    <!-- ==================== Custom Style Sheet ==================== -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="toggle-mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <h1 class="sub-headline">BOSS Multi Color Triple Pack T Shirts Enquiry</h1>
+                <a href="./products.html">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-hero">
+        <div class="container">
+            <div class="products">
+
+                <div class="product-bg">
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="separator">
+                                <div class="line-split">
+                                    <h2 id="exc">Exclusive</h2>
+                                </div>
+                            </div>
+                            <img src="images/product-images/612476.jpg" alt="T-shirt">
+                            <h2>BOSS Multi Color Triple <br /> Pack T Shirts</h2>
+
+                            <div class="des">
+                                <p id="price">£35.00 </p>
+                                <p id="sale">Sale £29.00</p>
+                            </div>
+                        </div>
+
+                        <div class="col-separator">
+                            <div class="col-line">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h1 id="size">Select your size*</h1>
+                            <ul class="size-list" id="size-lists">
+                                <li>
+                                    <button class="size-link" id="size-button" value="Small">
+                                        Small
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="size-link" id="size-button2" value="Medium">
+                                        Medium
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="size-link" id="size-button3" value="Large">
+                                        Large
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="size-link" id="size-button4" value="X Large">
+                                        X Large
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="size-link" id="size-button5" value="XX Large">
+                                        XX Large
+                                    </button>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-separator">
+                            <div class="col-line">
+                            </div>
+                        </div>
+
+                        <div class="contact-main">
+                            <form method="GET" action="final.html" id="myform" class="contact-form">
+
+                                <label id="fullname">Full Name*</label> <br />
+                                <input name="name" id="name" class="txt-form name" type="text" />
+
+                                <label id="mail">Email*</label> <br />
+                                <input name="email" id="email" class="txt-form email" type="email" />
+
+                                <input type="hidden" id="sizeOpt" name="sizes" value="" />
+
+                                <label id="cheap">Have you found this item cheaper on a competitor
+                                    website?*</label><br />
+
+                                <label>
+                                    <input id="radio1" type="radio" name="radio" value="Yes">
+                                    <label for="radio1"><span><span></span></span>Yes</label>
+
+                                    <input id="radio2" type="radio" name="radio" value="No">
+                                    <label for="radio2"><span><span></span></span>No</label> <br />
+                                </label>
+
+
+                                <div id="url">
+                                    <label>Competitor URL</label>
+                                    <input name="url_name" id="url-link" class="txt-form" type="url">
+                                </div>
+
+                                <label id="msg">Enquiry Message* <span id="characters">(0/200)</span></label>
+                                <textarea name="message" id="message" class="txt-form message"
+                                    type="textarea"></textarea>
+                                <p id="asterisk">Fields marked with an *asterisk are compulsory</p>
+
+                                <input type="submit" class=" btn" id="submit" value="Submit your enquiry">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+
+
+</html>
