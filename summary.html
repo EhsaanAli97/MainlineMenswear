@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mainline Menswear</title>
+    <title>Summary</title>
+
+    <!-- ==================== jQuery File ==================== -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
 
     <!-- ==================== Font Awesome Style Sheet ==================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
     <!-- ==================== Custom Style Sheet ==================== -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <!-- Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+
+
 </head>
 
 <body>
@@ -20,28 +29,50 @@
             <div class="toggle-mode">
                 <i class="fas fa-sun"></i>
                 <i class="fas fa-moon"></i>
+                <h1 id="summary" class="sub-headline">Summary of your Enquiry</h1>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-    </section>
-
-    <section class="main-hero">
+    <section class="product-hero">
         <div class="container">
-            <div class="headlines">
-                <h1 class="headline">
-                    Thank You <br /> For your Enquiry!
-                </h1>
-                <h2 class="sub-headline">
-                    We will be in touch with you soon
-                </h2>
-                <a href="index.html">
-                    <button id="return-btn" class="btn">Return to start</button>
-                </a>
+            <div class="products">
+                <div class="summary-bg">
+                    <div class="wrapper">
+
+                        <div class="card">
+                            <div class="separator">
+                                <div class="line-split">
+                                    <h2 id="exc">Exclusive</h2>
+                                </div>
+                            </div>
+                            <img src="images/product-images/612476.jpg" alt="T-shirt">
+                            <h2>BOSS Multi Color Triple <br /> Pack T Shirts</h2>
+
+                            <div class="des">
+                                <p id="price">£35.00 </p>
+                                <p id="sale">Sale £29.00</p>
+                            </div>
+                        </div>
+
+                        <div class="col-separator">
+                            <div class="col-line">
+                            </div>
+                        </div>
+
+                        <div id="app" class="contact-main">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
+
+
 
 </html>

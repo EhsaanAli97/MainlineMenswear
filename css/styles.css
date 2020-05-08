@@ -1,0 +1,398 @@
+/* ================================== Start Import Area ================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,900&display=swap');
+@import url(global.css);
+
+/* ================================== End Import Area ================================== */
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font);
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+section {
+	padding: 2.8rem 0;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/* ================================== Start Header Section ================================== */
+
+.toggle-mode {
+	display: flex;
+	flex-direction: row;
+}
+
+.toggle-mode h1 {
+	margin-top: 2rem;
+	margin-left: 20%;
+}
+
+#title {
+	margin-left: 25%;
+}
+
+.fa-sun,
+.fa-moon,
+.fa-chevron-circle-left {
+	font-size: 2.6rem;
+	margin-top: 2rem;
+	padding: 0.4rem;
+}
+
+.fa-chevron-circle-left {
+	margin-left: 27rem;
+	margin-top: 2.3rem;
+}
+
+/* ================================== End Header Section ================================== */
+
+/* ================================== Start Index Page ================================== */
+.hero {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 55vh;
+	background-image: var(--background);
+}
+
+.main-hero {
+	position: fixed;
+	top: 8%;
+	width: 100%;
+	height: 86vh;
+	background: var(--section-bg);
+	border-bottom-left-radius: 50% 475px;
+	border-bottom-right-radius: 50% 475px;
+}
+
+.headlines {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 9rem;
+}
+
+.headlines a {
+	display: block;
+	height: 0;
+}
+
+#start-btn {
+	letter-spacing: 2px;
+	margin-right: -2px;
+	height: 76px;
+	width: 282px;
+	font-size: 24pt;
+	margin-top: 9rem;
+}
+
+/* ================================== End Index Page ================================== */
+
+
+/* ================================== Start Product Page ================================== */
+
+.product-hero {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 85vh;
+	background-image: var(--background);
+}
+
+.card img {
+	width: 70%;
+	max-width: 100%;
+	margin-left: 2.8rem;
+	margin-top: -2.2rem;
+	border: 1px solid var(--border-color);
+}
+
+.card h2 {
+	text-align: center;
+	font-size: 1.1rem;
+	color: var(--font-color);
+	font-weight: 100;
+}
+
+.des {
+	padding: 3px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.des #price {
+	text-decoration: line-through;
+}
+
+.des #sale {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--error-color);
+}
+
+#enquire-btn {
+	height: 50px;
+	width: 204px;
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+	padding: 1rem 0.2rem;
+}
+
+.card #img2 {
+	margin-top: 2.4rem;
+}
+
+.fixed-price {
+	font-weight: 900;
+	margin-bottom: 3.5rem;
+}
+
+/* ================================== End Product Page ================================== */
+
+/* ================================== Start Enquiry Page ================================== */
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	margin-left: -8em;
+}
+
+.product-bg {
+	background: var(--section-bg);
+	height: 550px;
+	width: 1600px;
+	display: flex;
+	justify-content: center;
+}
+
+.col-separator {
+	display: flex;
+	padding-right: 3rem;
+	padding-left: 1rem;
+}
+
+.col-line {
+	height: 84%;
+	width: 1px;
+	margin-top: 2.5rem;
+	background-color: var(--border-color);
+}
+
+.card #size {
+	margin-top: 2.5rem;
+	margin-left: 2.5rem;
+	text-transform: uppercase;
+	font-size: 1.15rem;
+}
+
+.size-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 0.5rem;
+}
+
+.size-link {
+	display: block;
+	color: #121212;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	border: 1px solid var(--border-color);
+	padding: 0.5rem;
+	margin-bottom: 0.6rem;
+	width: 90%;
+	background: none;
+	cursor: pointer;
+}
+
+.contact-main {
+	margin-top: 2.9rem;
+	width: 600px;
+	max-width: 100%;
+}
+
+.contact-main p {
+	margin-top: 5rem;
+	font-size: 0.7rem;
+}
+
+.txt-form {
+	border: 1px solid var(--border-color);
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.7rem;
+	margin-top: 0.3rem;
+}
+
+#radio2 {
+	margin-left: 3rem;
+}
+
+#message {
+	height: 90px;
+}
+
+input,
+textarea {
+	color: var(--font-color);
+}
+
+input[type='radio']:hover {
+	cursor: pointer;
+}
+
+input[type='radio']:not(old) {
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	opacity: 0;
+}
+
+input[type='radio']:not(old)+label {
+	content: '';
+	display: inline-block;
+	margin-left: -2.2em;
+	line-height: 1.5em;
+}
+
+input[type='radio']:not(old)+label>span {
+	display: inline-block;
+	width: 1.575em;
+	height: 1.575em;
+	margin: 0.25em 0.5em 0.25em 0.25em;
+	border: 0.0625em solid rgb(192, 192, 192);
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+input[type='radio']:not(old):checked+label>span {
+	border: 2px solid var(--radio-border);
+	background-image: -moz-linear-gradient(var(--radio-color));
+	background-image: -ms-linear-gradient(var(--radio-color));
+	background-image: -o-linear-gradient(var(--radio-color));
+	background-image: -webkit-linear-gradient(var(--radio-color));
+	background-image: linear-gradient(var(--radio-color));
+}
+
+input[type='radio']:not(old):checked+label>span>span {
+	display: block;
+	width: 1.08em;
+	height: 1.05em;
+	margin: 0.125em;
+	border: 0.0625em solid var(--radio-border);
+	border-radius: 50%;
+	background-image: -moz-linear-gradient(var(--radio-border), var(--radio-secondary-border));
+	background-image: -ms-linear-gradient(var(--radio-border), var(--radio-secondary-border));
+	background-image: -o-linear-gradient(var(--radio-border), var(--radio-secondary-border));
+	background-image: -webkit-linear-gradient(var(--radio-border),
+			var(--radio-secondary-border));
+	background-image: linear-gradient(var(--radio-border), var(--radio-secondary-border));
+}
+
+#url {
+	display: none;
+}
+
+#characters {
+	font-size: 0.6rem;
+}
+
+textarea {
+	resize: none;
+}
+
+#submit {
+	height: 50px;
+	width: 204px;
+	font-size: 0.75rem;
+	margin-left: 29rem;
+	padding: 1rem 0.2rem;
+}
+
+input.error,
+textarea.error {
+	border: 1px solid var(--error-color);
+}
+
+.error {
+	color: var(--error-color);
+}
+
+/* ================================== End Enquiry Page ================================== */
+
+/* ================================== Start Summary Page ================================== */
+.summary-bg {
+	background: var(--section-bg);
+	height: 500px;
+	width: 1000px;
+	display: flex;
+	justify-content: center;
+}
+
+#summary {
+	margin-left: 28%;
+}
+
+.summary-info {
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.buttons-selected {
+	font-weight: bold;
+}
+
+.summary-msg {
+	color: var(--font-color);
+}
+
+.finish-btn {
+	height: 50px;
+	width: 204px;
+	font-size: 0.75rem;
+	margin-left: 25rem;
+	margin-top: 5.5rem;
+}
+
+/* ================================== End Summary Page ================================== */
+
+/* ================================== Start Contact Page ================================== */
+#return-btn {
+	margin-right: -2px;
+	height: 76px;
+	width: 282px;
+	font-size: 1.4rem;
+	margin-top: 9rem;
+}
+
+/* ================================== End Contact Page ================================== */
