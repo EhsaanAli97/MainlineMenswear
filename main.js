@@ -227,7 +227,7 @@ if (app) {
 			urlName.searchParams.get('message') || 'N/A'
 		}" </label> <br/>
 
-		<form action="./mailHandler.php" method="POST" data-netlify="true"> 
+		<form action="./summary.html" method="POST"> 
 			<input type="submit" class="btn finish-btn" value="Finish">
 		</form>
 				
